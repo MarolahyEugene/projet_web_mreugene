@@ -25,7 +25,9 @@ class CalendrierController extends Controller
         
         $event = $events->getEventsBetweenByDay( $star , $end ) ;
 
-        return view('public.calendrier' , [
+        dd($cal);
+
+        return view('enseignants.calendrier' , [
             'agenda' => $agenda ,
             'events' => $event ,
             'start' => $star ,
