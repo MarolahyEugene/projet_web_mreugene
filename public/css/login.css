@@ -1,0 +1,56 @@
+.card{
+    background: linear-gradient(to bottom, #e7f7ffcc, #c7eaeae2) !important;
+    width: 65vh;
+    margin: 8% auto;
+    border: none;
+    padding: 0%;
+    box-shadow: 1px 1px 15px 1px rgba(79, 121, 134, 0.712) ;
+}
+h2{
+    /* color: linear-gradient(to right,#2b7397f8, #058a8ab9) !important; */
+    color: rgb(3, 138, 143) !important;
+}
+.card-body{
+    margin: 2px 15px;
+}
+label{
+    color: lightslategrey;
+    padding: 3px !important;
+}
+body{
+    background: linear-gradient(to top,#e7f7ffea, #64b4b486);
+    background-attachment: fixed;
+}
+.btn-success{
+    width: 40vh;
+    background-color: rgba(3, 202, 152, 0.993);
+    border: none;
+    box-shadow: 0px 8px 25px 0px #93c1bd;
+}
+.btn-success:hover{
+    background-color: rgba(6, 189, 143, 0.993);
+    border: none;
+}
+.form-check-input:checked{
+    background-color: rgba(3, 202, 152, 0.993);
+    border: none;
+}
+.auth-form{
+    margin: 5px;
+}
+.email.mb-3{
+    width: 100%;
+}
+.mx-auto {
+    margin-right: 25px !important;
+    margin-left: 25px !important;
+    /* width: 80%; */
+  }
+
+  .align-content-end , .text-center {
+    align-content: flex-end !important;
+    padding: 0px;
+  }
+  .form-control {
+      width: 100%;
+  }

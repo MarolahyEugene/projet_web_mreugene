@@ -1,0 +1,809 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    /* position: relative; */
+}
+
+.image img,
+.module .img-module {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.module .img-module {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.list-menu .lien {
+    display: none;
+}
+
+.list-menu.active .lien {
+    display: block;
+}
+
+.sidebar {
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    right: calc(100% - 50px);
+    bottom: 3px;
+    background-color: white;
+    box-shadow: 1px 0 26px 0px rgba(86, 93, 103, 0.556);
+}
+
+.brand {
+    /* background-color: rgba(20, 51, 228, 0.929); */
+    background-color: rgb(14, 0, 169);
+    color: beige;
+    width: 50px;
+    height: 50px;
+    padding: 7px 12px;
+}
+
+.sidebar-container {
+    display: block;
+    /* width: 50px; */
+    /* box-shadow: 0 0 160px 1px lightsteelblue; */
+}
+
+.croix {
+    font-weight: 100;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(218, 223, 229);
+    float: right;
+    padding: 0 7px;
+    color: red;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.croix.close {
+    display: none;
+}
+
+.list-menu .item {
+    padding: 7px 10px;
+    width: 50px !important;
+    margin-top: 7px;
+    color: lightslategray;
+    transition: 1s;
+}
+
+.list-menu.active .item {
+    transition: 1s;
+    padding: 7px 10px;
+    width: 50px;
+    color: rgb(7, 178, 169);
+    margin-top: 7px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.887), #81eff1cb) !important;
+}
+
+.list-menu.active .lien {
+    background: linear-gradient(to right, rgb(248, 248, 248), #ecf3ffb9) !important;
+    box-shadow: 5px 0px 120px 0px rgba(188, 189, 189, 0.66);
+    padding: 10px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    bottom: 1px;
+    left: 50px;
+    width: 230px;
+}
+
+.lien:only-child {
+    display: block;
+}
+
+.list-menu.active .lien .link,
+.list-menu.active .info {
+    display: block;
+    color: rgb(59, 59, 67);
+    font-weight: 500;
+    padding: 7px 10px;
+    text-decoration: none;
+    /* overflow-y: scroll; */
+}
+
+.list-menu.active .lien .link:first-child {
+    margin-top: 45px;
+}
+
+.lien p {
+    border-top: 2px solid rgba(197, 212, 221, 0.682);
+    padding-top: 15px;
+}
+
+.list-menu.active .croix {
+    /* margin-bottom: 10px; */
+    visibility: visible;
+    position: absolute;
+    top: 5px;
+    left: 250px;
+    border-radius: 25%;
+}
+
+.list-menu .croix {
+    visibility: hidden;
+}
+
+.list-menu.active .lien .link:hover {
+    background-color: rgb(209, 218, 219);
+}
+
+.list-menu {
+    display: flex;
+    padding: 1px 0px;
+}
+
+.sidebar-menu ul {
+    margin: 5px 1px;
+    padding: 0;
+}
+
+.sidebar-menu ul .sidebar-card {
+    margin: 10px;
+    padding: 5px;
+}
+
+.main-content {
+    position: absolute;
+    padding: 1px 5px;
+    top: 1px;
+    left: 0px;
+    right: 3px;
+    bottom: 1px;
+    margin: 1px 1px 2px 52px;
+    box-shadow: 1px 0 16px 0px rgba(86, 93, 103, 0.556);
+    background-color: rgba(255, 255, 255, 0.921);
+}
+
+.main-content.home {
+    position: absolute;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    right: 3px;
+    bottom: 1px;
+    margin: 1px 1px 2px 52px;
+    box-shadow: 1px 0 16px 0px rgba(86, 93, 103, 0.556);
+    background-color: rgba(255, 255, 255, 0.921);
+}
+
+
+/*   ===========  Profile  ========== */
+
+.profile {
+    /* background-color: rgb(199, 218, 219); */
+    height: auto;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    width: auto;
+    border-bottom: 2px solid rgba(197, 212, 221, 0.682);
+}
+
+.lien img {
+    margin-left: 70px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.item img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin-left: 0px;
+}
+
+.list-menu #profile {
+    padding-left: 7px;
+}
+
+#img-detail {
+    width: 178px;
+    height: 150px;
+    border-radius: 3px;
+}
+
+#detail {
+    position: absolute;
+    left: 50px;
+}
+
+#detail img {
+    margin-left: 5px;
+    background-color: bisque;
+}
+
+.profile h4 {
+    text-align: center;
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.profile small {
+    margin: 0 45px;
+    font-size: small;
+}
+
+.content {
+    padding: 0px 5px;
+    margin: 0%;
+}
+
+.homr .content {
+    padding: 0px;
+    margin: 0%;
+}
+
+.content .titre {
+    padding-left: 10px;
+}
+
+
+/*   ============== Calendar  ============   */
+
+.navbar a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+.calendar-table {
+    width: 100%;
+    height: calc(100vh - 230px);
+}
+
+.calendar {
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 0 106px 1px rgba(104, 111, 134, 0.726);
+    background-color: aliceblue;
+}
+
+.calendar-table td:hover {
+    text-align: center;
+    box-shadow: 0 0 106px 1px rgba(158, 186, 202, 0.586);
+    padding: 15px;
+    border: 1px solid rgba(103, 113, 130, 0.758);
+    vertical-align: top;
+    width: 14.75%;
+    height: 13.5%;
+}
+
+.calendar-table td {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid rgba(165, 179, 180, 0.669);
+    vertical-align: top;
+    width: 14.75%;
+    height: 13.5%;
+}
+
+.calendar-table-6-semaines td {
+    /* height: 10.5%; */
+}
+
+.agenda {
+    display: block;
+    background-color: white;
+    padding: 0;
+    box-shadow: 0 0 106px 1px rgba(179, 185, 201, 0.84);
+}
+
+.titre {
+    font-size: 24px;
+    color: rgb(83, 91, 126);
+    font-weight: 500;
+}
+
+.agenda h3 {
+    margin: 0;
+    color: white;
+    padding: 1px 15px 3px;
+    background-color: rgb(6, 187, 181);
+    border-radius: 6px 6px 0 0;
+    justify-items: center;
+}
+
+.list-agenda {
+    display: flex;
+    padding: 2px 5px;
+}
+
+.list-agenda li {
+    display: flex;
+    margin: 2px 15px;
+}
+
+.calendar-week {
+    font-weight: 600;
+    color: rgb(70, 93, 96);
+    font-size: 1.2rem;
+}
+
+.calendar-day {
+    font-weight: 500;
+    color: rgb(42, 45, 53);
+    font-size: 1.2rem;
+}
+
+.calendar-events {
+    font-size: 12px;
+}
+
+.head-calendar {
+    background-color: rgb(6, 187, 181);
+    border-radius: 6px 6px 0 0;
+    padding: 0 15px;
+    color: white;
+}
+
+.next-prev a {
+    color: rgba(27, 28, 29, 0.926);
+    height: 30px;
+    width: auto;
+    padding: 0 15px;
+    border: 1px solid rgba(255, 255, 255, 0.601);
+    background-color: rgb(209, 250, 255);
+    box-shadow: 0 0 60px 1px rgba(172, 177, 177, 0.943);
+}
+
+.next-prev a:hover {
+    border: none;
+    height: 30px;
+    width: auto;
+    padding: 0 15px;
+    color: rgb(40, 45, 50) !important;
+    background-color: rgba(209, 246, 255, 0.984) !important;
+}
+
+.lien-calendar {
+    text-decoration: none;
+    color: rgb(0, 168, 148);
+}
+
+.calendar-othermonth .calendar-day {
+    font-weight: 500;
+    color: rgba(174, 179, 210, 0.496) !important;
+}
+
+.event-values {
+    display: flex;
+    border-top: 1px solid rgba(165, 179, 180, 0.669);
+    border-bottom: 1px solid rgba(165, 179, 180, 0.669);
+    width: 100%;
+}
+
+.event-values .nom,
+.event-values .date,
+.event-values .debut,
+.event-values .fin,
+.event-values .desc {
+    /* border-right: 1px solid rgba(165, 179, 180, 0.669); */
+    padding: 2px 5px;
+}
+
+.event-values .nom {
+    width: 14%;
+}
+
+.event-values .date {
+    width: 10%;
+}
+
+.event-values .debut,
+.event-values .fin {
+    width: 8%;
+}
+
+.event-values .desc {
+    width: 50%;
+}
+
+.page-accueil {
+    margin: 20px 10px;
+    padding: 5px 0px;
+    border-bottom: 2px solid rgba(188, 194, 221, 0.68);
+}
+
+.page-accueil h2 {
+    color: rgba(91, 103, 109, 0.825);
+}
+
+.head-right .header-link {
+    padding: 0px 5px;
+    margin: 0px 25px;
+}
+
+.header-link {
+    padding: 0px 15px;
+    color: rgba(124, 137, 172, 0.949);
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.head-accueil {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    height: 50px;
+    border: 2px solid rgb(14, 0, 169);
+}
+
+.head-accueil .fa.fa-info {
+    background-color: rgb(14, 0, 169);
+    padding: 15px 15px;
+    font-style: italic;
+    margin: 0px;
+    height: 47px;
+    width: 40px;
+    color: white;
+}
+
+.head-accueil small {
+    font-size: 13px;
+    padding: 2px 5px;
+    overflow-y: scroll;
+}
+
+@media(width: 800px) {
+    .head-accueil small {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 14px;
+        padding: 2px 5px;
+        /* overflow-y: scroll; */
+    }
+}
+
+@media(width: 717px) {
+    .head-accueil small {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 12px;
+        padding: 2px 5px;
+        /* overflow-y: scroll; */
+    }
+}
+
+@media(width: 645px) {
+    .head-accueil small {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 10px;
+        padding: 2px 5px;
+        /* overflow-y: scroll; */
+    }
+}
+
+.fa-plus,
+.fa-bell-o,
+.fa-ellipsis-v {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+
+/* =================   Page de Notification  ================ */
+
+.main-content.notif {
+    box-shadow: 2px 3px 42px 2px rgb(148, 168, 187);
+    margin: 2px 2px 2px 55px;
+}
+
+.pages.notifications {
+    display: block;
+    height: auto;
+    margin: 5px 15px;
+    background-color: rgb(227, 237, 238);
+    border-radius: 5px 5px 3px 3px;
+    box-shadow: 0px 0px 80px 0px rgb(155, 159, 163);
+}
+
+.head-notifications h2 {
+    margin: 10px;
+    color: rgba(133, 153, 185, 0.676);
+    padding: 10px 10px;
+}
+
+
+/*  ================ Début Notification  =============   */
+
+.notifications {
+    display: none;
+}
+
+.notifications.actif {
+    display: block;
+    position: absolute;
+    top: 160px;
+    width: 400px;
+    height: auto;
+    right: 90px;
+    background-color: white;
+    box-shadow: 2px 3px 12px 2px rgb(148, 168, 187);
+    border-radius: 5px 5px 3px 3px;
+}
+
+.notif-compteur {
+    position: absolute;
+    top: 111px;
+    right: 112px;
+    display: flex;
+    height: 15px;
+    width: 15px;
+    /* padding-bottom: 0.18rem; */
+    border-radius: 50%;
+    background-color: rgb(255, 28, 119);
+}
+
+.notif-compteur i {
+    /* position: absolute; */
+    color: rgb(250, 250, 250);
+    /* right: 0.17rem;
+    top: -0.17rem; */
+    font-size: .65rem;
+    margin-top: 0.01rem;
+    margin-left: 0.01rem;
+    margin-right: 0.01rem;
+    margin-bottom: 0.10rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.notifications.actif::before {
+    z-index: 4;
+    content: "";
+    position: absolute;
+    top: -26px;
+    right: 6px;
+    border: 15px solid;
+    border-radius: 10px;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+}
+
+.notif-body {
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-top: 1px solid rgba(141, 164, 204, 0.464);
+}
+
+.notif-body:first-child {
+    border: none;
+}
+
+.notif-content {
+    display: block;
+    margin: 5px 10px;
+    padding: 0px;
+    box-sizing: content-box;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.notif-content h3 {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(92, 114, 151, 0.827);
+    margin: 0px;
+    padding: 0px;
+}
+
+.notif-content small {
+    font-size: 12px;
+    font-weight: 200;
+    padding: 0px;
+    color: rgba(124, 136, 155, 0.617);
+}
+
+.notif-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notif-icon i {
+    margin: 0 7px;
+}
+
+.notif-photo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.fa.fa-star-o {
+    color: rgb(8, 190, 163);
+    font-weight: 200;
+}
+
+.fa.fa-thumbs-up {
+    color: rgb(2, 83, 233);
+    font-weight: 200;
+}
+
+.fa.fa-close {
+    color: rgb(230, 12, 95);
+    font-weight: 200;
+}
+
+
+/*  ================  Fin Notification  =============   */
+
+
+/*   ======================   Discussion messages   ================== */
+
+.main-content.discussions {
+    /* position: relative; */
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-left: 55px;
+    margin-bottom: 2px;
+    background-color: rgb(242, 243, 241);
+    box-shadow: 5px 0px 20px 0px rgba(92, 97, 103, 0.818);
+}
+
+.head-discussion {
+    background: rgb(255, 253, 253);
+    box-shadow: 5px 0px 120px 0px rgba(105, 118, 118, 0.66);
+    margin: 0 5px;
+    border-radius: 50px 5px 5px 50px;
+    padding: 0px;
+}
+
+.discussion {
+    /* background-color: rgb(242, 243, 241); */
+    margin-top: 0;
+    margin-left: 0px;
+}
+
+.discussions h2 {
+    font-weight: 400;
+    color: rgba(78, 106, 141, 0.914);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    margin: 10px 5px;
+}
+
+form input:focus {
+    border: none;
+}
+
+.recherche input {
+    margin: 0;
+}
+
+.recherche .btn {
+    margin: 0 2px;
+    color: lightslategrey;
+    font-weight: 500;
+    background-color: aliceblue;
+    border: none;
+}
+
+.pdp .profiles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.profil-discussion {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.pdp {
+    display: flex;
+    justify-content: between;
+    /* border-bottom: 1px solid rgba(174, 179, 210, 0.496); */
+    padding: 2px 0px;
+    margin: 15px 0px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.status small {
+    color: rgba(133, 153, 185, 0.676);
+}
+
+.actif {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: aqua;
+    margin: 0 10px;
+}
+
+.inactif {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(163, 166, 175, 0.843);
+    margin: 0 10px;
+}
+
+.pdp img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 1px;
+}
+
+.profil-discussion img {
+    margin: 2px 18px;
+    width: 38px;
+    height: 39px;
+    border-radius: 50%;
+}
+
+.profil {
+    display: block;
+}
+
+.list-discussion a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.profil h4 {
+    margin: 0;
+    color: rgba(124, 137, 172, 0.949);
+}
+
+.list-discussion {
+    /* box-shadow: 0px 0px 2px 0px rgba(105, 118, 118, 0.66); */
+    margin: 2px 5px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.922);
+}
+
+.profil small {
+    font-size: 12px;
+    color: rgba(133, 153, 185, 0.676);
+    margin-left: 15px;
+    text-align: center;
+    padding: 0;
+}
+
+.profil img {
+    margin: 5px 10px 0px;
+    padding: 0px;
+}
+
+.discussion {
+    display: block;
+    box-sizing: border-box;
+}

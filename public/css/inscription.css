@@ -1,0 +1,99 @@
+    body {
+        background: #dde4f0d6;
+        background-attachment: fixed;
+    }
+    
+    .btn-success {
+        background-color: rgba(11, 218, 166, 0.993);
+        border: none;
+        height: 40px;
+        font-size: 18px;
+        box-shadow: 1px 3px 8px 1px #038575;
+    }
+    
+    .btn-success:hover {
+        background-color: rgba(0, 213, 192, 0.993);
+        border: none;
+        box-shadow: 1px 4px 3px 0px #a9b9b9;
+        /* box-shadow: 0px 18px 14px 0px #056059; */
+    }
+    
+    .form-check-input:checked {
+        background-color: rgba(3, 202, 152, 0.993);
+        border: none;
+    }
+    
+    .card-header {
+        border: 0;
+        /* background-color: rgba(6, 155, 160, 0.797); */
+        background-color: rgba(11, 207, 171, 0.993);
+        border-radius: 10px 10px 0 0 !important;
+    }
+    
+    .card {
+        border-radius: 10px 10px 5px 5px !important;
+        background: linear-gradient(to right, rgba(218, 218, 227, 0.684), rgba(243, 239, 252, 0.915));
+        width: 80%;
+        margin: 1% auto;
+        border: none;
+        padding: 0%;
+        box-shadow: 0px 0px 50px 0px #6c6b7ca8;
+    }
+    
+    h2 {
+        color: rgb(253, 253, 253) !important;
+    }
+    
+    label {
+        color: lightslategrey;
+        padding: 3px;
+        float: left;
+    }
+    
+    .form-content-h,
+    .form-content-b {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 1px solid rgb(190, 202, 212);
+    }
+    
+    .form-gauche,
+    .form-droit {
+        padding: 5px;
+        width: 50%;
+        margin: 0 5px;
+    }
+    
+    .form-content-b {
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 5px 15px;
+    }
+    
+    .form-content-b .email {
+        width: 75%;
+        padding: 5px;
+    }
+    
+    #masque {
+        background-color: white !important;
+        border: 0px 1px 1px 1px solid thistle;
+        cursor: pointer;
+        color: rgba(92, 105, 103, 0.151);
+    }
+    
+    #masque.active {
+        background-color: white !important;
+        border: 0px 1px 1px 1px solid thistle;
+        cursor: pointer;
+        color: rgba(87, 97, 107, 0.651);
+    }
+    
+    .icon {
+        color: rgb(12, 128, 136);
+    }
+    
+    #motdpass {
+        border: 0px 1px 0px 0px solid thistle;
+    }
